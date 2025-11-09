@@ -292,12 +292,12 @@ body {
 
 @media screen and (max-width: 767px) {
 
-    /* Body */
+
     body {
         padding: 10px;
     }
-    
-    /* Card */
+
+
     .card {
         max-width: 320px;
         width: 85%;
@@ -314,7 +314,7 @@ body {
         height: 150px;
     }
 
-    /* Button */
+  
     #link {
         padding: 10px 30px;
     }
@@ -323,29 +323,29 @@ body {
         font-size: 16px;
     }
 
-    /* GIF */
+
     #gif {
-        width: 100px;
-        left: 10%;
+        width: 200px;
+        left: -1%;
         bottom: 5%;
     }
 
     #gif2 {
-        width: 80px;
+        width: 120px;
         left: 70%;
         bottom: 5%;
     }
+
     
-    /* Popup */
     .popup {
         width: 90%;
         border-radius: 12px;
     }
 
-    /* ✅ Perbaikan tombol X & padding header */
+    
     .popup-header {
-        padding: 40px 30px 30px 30px; 
-        /* top right bottom left — memberi ruang agar tombol X tidak menempel */
+        padding: 40px 30px 30px 30px;
+    
     }
 
     .popup-header h1 {
@@ -355,8 +355,10 @@ body {
     .popup-header img {
         width: 25px;
         height: 25px;
-        top: 10px;     /* Dijauhkan dari atas */
-        right: 15px;   /* Dijauhkan dari kanan */
+        top: 10px;
+        /* Dijauhkan dari atas */
+        right: 15px;
+        /* Dijauhkan dari kanan */
     }
 
     .popup-content {
@@ -383,7 +385,7 @@ body {
     .card p {
         font-size: 20px;
     }
-    
+
     #cat {
         width: 120px;
         height: 120px;
@@ -409,5 +411,81 @@ body {
         height: 26px;
         top: 22px;
         right: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+   
+    body {
+        padding: 20px;
+    }
+
+   
+    .card {
+        max-width: 420px;
+        padding: 35px 40px;
+        gap: 20px;
+    }
+
+    .card p {
+        font-size: 28px;
+    }
+
+    #cat {
+        width: 180px;
+        height: 180px;
+    }
+
+    #link {
+        padding: 12px 40px;
+    }
+
+    #link p {
+        font-size: 18px;
+    }
+
+    /* GIF lebih besar dari HP, tetapi tetap aman */
+    #gif {
+        width: 300px;
+        left: 15%;
+        bottom: 5%;
+    }
+
+    #gif2 {
+        width: 150px;
+        left: 65%;
+        bottom: 5%;
+    }
+
+    /* Popup tampilan iPad */
+    .popup {
+        width: 70%;
+        border-radius: 16px;
+    }
+
+    .popup-header {
+        padding: 45px 40px 35px 40px;
+    }
+
+    .popup-header h1 {
+        font-size: 22px;
+    }
+
+    .popup-header img {
+        width: 35px;
+        height: 35px;
+        top: 25px;
+        right: 25px;
+    }
+
+    .popup-content {
+        padding: 25px 35px;
+        max-height: 65vh;
+    }
+
+    .popup-content p {
+        font-size: 16px;
+        line-height: 1.7;
     }
 }
